@@ -1,0 +1,5 @@
+.cph/
+.vscode/
+in.in
+out.out
+*.exe
