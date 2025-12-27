@@ -10,16 +10,19 @@ int main(){
     freopen("in.in", "r", stdin);
     freopen("out.out", "w", stdout);
     #endif
-    float w,f,a,r;
-    cin>>w>>f>>a>>r;
-    if(r>0&&w==0){
-        cout<<"Rejected";
+    ll n;
+    cin>>n;
+    ll x[n+10]={0};
+    ll sum=0;
+    ll money=0;
+    for(int i=0;i<n;i++){
+        ll x,p;
+        cin>>x>>p;
+        if(x>=500&&p<500){
+            sum++;
+            money+=p;
+        }
     }
-    else if((f/w)-0.2<=0.00001&&(a/w)-0.3<=0.00001&&w>=r){
-        cout<<"Accepted";
-    } 
-    else{
-        cout<<"Rejected";
-    }
+    cout<<sum<<" "<<money;
     return 0;
 }

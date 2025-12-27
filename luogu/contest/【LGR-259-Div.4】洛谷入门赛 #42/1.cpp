@@ -10,8 +10,10 @@ int main(){
     freopen("in.in", "r", stdin);
     freopen("out.out", "w", stdout);
     #endif
-    int p;
-    cin>>p;
-    cout<<p/2<<endl;
+    ll x,y;
+    cin>>x>>y;
+    x/=3;
+    y/=2;
+    cout<<min(x,y);
     return 0;
 }
